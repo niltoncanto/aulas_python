@@ -1,0 +1,14 @@
+Forma: Círculo, Raio: 5, Área: 78.53975, Perímetro: 31.4159
+Forma: Retângulo
+Forma: Círculo, Raio: 5, Área: 78.53975, Perímetro: 31.41592653589793
+Forma: Retângulo
+Forma: Círculo, Raio: 5, Área: 78.53975, Perímetro: 31.41592653589793
+Forma: Retângulo
+Forma: Círculo, Raio: 5, Área: 78.53975, Perímetro: 31.41592653589793
+Forma: Retângulo
+Forma: Círculo, Raio: 5, Área: 78.53975, Perímetro: 31.41592653589793
+Forma: Retângulo
+Forma: Círculo, Raio: 5, Área: 78.53981633974483, Perímetro: 31.41592653589793
+Forma: Retângulo
+Forma: Círculo, Raio: 5, Área: 78.53981633974483, Perímetro: 31.41592653589793
+Forma: Retângulo

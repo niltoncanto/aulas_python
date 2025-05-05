@@ -1,0 +1,4 @@
+Reserva realizada, devolver ate:2023-09-29 17:18:02.317149
+
+Livros referência não podem ser reservados.
+

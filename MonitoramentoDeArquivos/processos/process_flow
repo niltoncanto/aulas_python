@@ -1,0 +1,6 @@
+// Fluxo de Documentos Detalhado
+digraph {
+	"C:\xampp2\htdocs\python_aulas\MonitoramentoDeArquivos\processos\entrada" [label="C:\xampp2\htdocs\python_aulas\MonitoramentoDeArquivos\processos\entrada"]
+	"C:\xampp2\htdocs\python_aulas\MonitoramentoDeArquivos\processos\fase1" [label="C:\xampp2\htdocs\python_aulas\MonitoramentoDeArquivos\processos\fase1"]
+	C:"\xampp2\htdocs\python_aulas\MonitoramentoDeArquivos\processos\entrada" -> C:"\xampp2\htdocs\python_aulas\MonitoramentoDeArquivos\processos\fase1" [label="00001.txt"]
+}

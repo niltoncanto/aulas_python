@@ -1,0 +1,2 @@
+xyx, joao, 12345, Status.DISPONIVEL, None, None
+yyy, Pedro, 54321, Status.DISPONIVEL, None, Tema.FISICA

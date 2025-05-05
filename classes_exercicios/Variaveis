@@ -1,0 +1,11 @@
+class Exemplo:
+    def __init__(self):
+        self._variavel_protegida = "protegida"
+        self.__variavel_privada = "privada"
+
+obj = Exemplo()
+print(obj._variavel_protegida) # Saída: protegida
+print(obj.__variavel_privada) # AttributeError
+
+# O acesso à variável privada é possível usando o nome "mangled":
+print(obj._Exemplo__variavel_privada) # Saída: privada

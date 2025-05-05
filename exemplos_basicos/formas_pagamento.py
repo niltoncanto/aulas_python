@@ -1,0 +1,58 @@
+from abc import ABC, abstractmethod
+
+# Classe base abstrata Pagamento
+class Pagamento(ABC):
+    def __init__(self, quantia, data):
+        self.quantia = quantia
+        self.data = data
+
+    @abstractmethod
+    def efetuar_pagamento(self):
+        pass
+
+    def detalhes(self):
+        return f'Quantia: {self.quantia}, Data: {self.data}'
+
+# Classe derivada Dinheiro
+class Dinheiro(Pagamento):
+    def __init__(self, quantia, data, moeda):
+        super().__init__(quantia, data)
+        self.moeda = moeda
+
+    def efetuar_pagamento(self):
+        print(f'Pagamento de {self.quantia} {self.moeda} em dinheiro processado em {self.data}.')
+
+# Classe derivada CartaoCredito
+class CartaoCredito(Pagamento):
+    def __init__(self, quantia, data, numero_cartao, validade):
+        super().__init__(quantia, data)
+        self.numero_cartao = numero_cartao
+        self.validade = validade
+
+    def efetuar_pagamento(self):
+        print(f'Pagamento de {self.quantia} via cartão de crédito número {self.numero_cartao} processado em {self.data}.')
+
+# Classe derivada Cheque
+class Cheque(Pagamento):
+    def __init__(self, quantia, data, numero_cheque, banco):
+        super().__init__(quantia, data)
+        self.numero_cheque = numero_cheque
+        self.banco = banco
+
+    def efetuar_pagamento(self):
+        print(f'Pagamento de {self.quantia} via cheque número {self.numero_cheque} do banco {self.banco} processado em {self.data}.')
+
+# Testando o sistema
+if __name__ == "__main__":
+    # Criação de objetos para diferentes tipos de pagamento
+    pagamento_dinheiro = Dinheiro(100, "2024-03-07", "USD")
+    pagamento_cartao = CartaoCredito(200, "2024-03-07", "1234567890123456", "12/25")
+    pagamento_cheque = Cheque(300, "2024-03-07", "987654", "Banco do Brasil")
+
+    # Lista de pagamentos
+    pagamentos = [pagamento_dinheiro, pagamento_cartao, pagamento_cheque]
+
+    # Processamento de cada tipo de pagamento
+    for pagamento in pagamentos:
+        pagamento.efetuar_pagamento()
+        print(pagamento.detalhes())
