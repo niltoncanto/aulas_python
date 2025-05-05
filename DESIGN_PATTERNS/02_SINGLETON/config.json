@@ -1,0 +1,11 @@
+{
+    "database_url": "http://localhost:5432/meubanco",
+    "debug_mode": true,
+    "max_connections": 10,
+    "api_key": "12345-abcde-67890-fghij",
+    "email_service": {
+        "smtp_server": "smtp.exemplo.com",
+        "smtp_port": 587,
+        "use_tls": true
+    }
+}
